@@ -19,6 +19,7 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 
 
 ... # Your code here
+.0    
 
 tina.pendown()
 tina.color('green')

@@ -6,7 +6,7 @@ Draw two circles, filled with different colors,
 and in different places on the screen. 
 
 You should look at the previous program, 02_Meet_TIna.py
-to see how to use the turtle commands.
+to see how to use the turtle commands.                   
 
 """
 
@@ -20,11 +20,18 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 
 
 ... # Your code here
-tina.color('green')
-tina.begin_fill()
-tina.circle(50,50)
-tina.end_fill()
-tina.backward(50)
+Colors=["green","blue"]
+for color in Colors:
+    tina.color(color)
+    tina.begin_fill()
+    tina.circle(50,steps=50)
+    tina.end_fill()
+    tina.penup()
+    tina.backward(150)
+    tina.pendown()
+
+
+
 
 turtle.exitonclick()                    # Close the window when we click on it
 
