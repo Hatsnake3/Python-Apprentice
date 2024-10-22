@@ -13,3 +13,24 @@ Use this code to get a random x and y location
     y = random.randint(-300, 300)
 
 """
+import turtle
+def set_turtle_image(turtle, image_name):
+    """Set the turtle's shape to a custom image."""
+
+    from pathlib import Path
+    image_dir = Path(__file__).parent / "images"
+    image_path = str(image_dir / image_name)
+
+    screen = turtle.getscreen()
+    screen.addshape(image_path)
+    turtle.shape(image_path)
+    screen=turtle.Screen()
+
+turtle.Screen.setup(width=6000, height=6000)
+# Create a turtle and set its shape to the custom GIF
+t = turtle.Turtle()
+
+set_turtle_image(t, ".gif")
+
+
+
