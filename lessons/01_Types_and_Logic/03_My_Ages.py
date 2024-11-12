@@ -33,7 +33,7 @@ messagebox.showinfo('What you are', "You are a baby.")
 
 from tkinter import messagebox, simpledialog, Tk # import required modules
 
-window = Tk()     # Create a window object
+window = Tk()     # Create a window object2
 window.withdraw() # Hide the window; we just want to see pop ups
 
 # Ask the user's age
@@ -42,7 +42,29 @@ window.withdraw() # Hide the window; we just want to see pop ups
 # and create a message
 
 # Show the message to the user
+age = simpledialog.askinteger("Your Age", "How old are you?") 
+'''
+0-2: Baby
+3-5: Toddler
+6-12: Child
+13-19: Teen
+20-64: Adult
+65+: Senior
 
+'''
+if age <=2:
+    print("Baby")
+elif age >2 and age <=5:
+    print("Toddler"5)
+elif age >5 and age <=12:
+    print("Child")
+    print("You are awesome!") 
+elif age >12 and age <=19:
+    print("Teen")
+elif age >19 and age <=64:
+    print(Adult)
+elif age >=65:
+    print(Senior)
 
 
 window.mainloop()  # Keeps the window open
