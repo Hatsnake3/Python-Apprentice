@@ -54,17 +54,19 @@ age = simpledialog.askinteger("Your Age", "How old are you?")
 '''
 if age <=2:
     print("Baby")
-elif age >2 and age <=5:
-    print("Toddler"5)
-elif age >5 and age <=12:
+    print("liar stop being a discord mod")
+elif age <=5:
+    print("Toddler")
+    print("If your name is wesley get a better name")
+elif age <=12:
     print("Child")
-    print("You are awesome!") 
-elif age >12 and age <=19:
+    print("You are beta with no rizz!") 
+elif age <=19:
     print("Teen")
-elif age >19 and age <=64:
-    print(Adult)
+elif age <=64:
+    print("Adult")
 elif age >=65:
-    print(Senior)
+    print("Senior")
 
 
 window.mainloop()  # Keeps the window open
