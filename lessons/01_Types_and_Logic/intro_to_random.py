@@ -18,7 +18,7 @@ for i in range(5):
 for i in range(5):
     number = random.randint(-50, 5)
     print(number)
-
+    print(number)
 # RANDOM DECIMAL NUMBERS
     # random.uniform(start,end)
     # Generates a random floating(decimal) number
